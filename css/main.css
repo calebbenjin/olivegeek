@@ -146,7 +146,7 @@ img {
 
 @media only screen and (max-width: 560px)  {
   .title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -330,11 +330,12 @@ header .bugger {
     width: 40%;
   }
   .showcase .text-content p {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
   .showcase .text-content .icon-btn {
     font-size: 0.6rem;
     color: var(--primaryColor);
+    /* margin-top: -20rem; */
   }
 }
 
