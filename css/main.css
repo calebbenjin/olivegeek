@@ -17,9 +17,9 @@
   --spacing: 0.2rem;
   --bold: 800;
   --normarl: 400;
-  --largeFont: 4rem;
-  --meduimFont: 3rem;
-  --smallFont: 1.5rem;
+  --largeFont: 3.5rem;
+  --meduimFont: 2rem;
+  --smallFont: 1.2rem;
   --radius: 3px;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -113,6 +113,7 @@ a:hover {
   min-height: 100vh;
 }
 
+
 img {
   max-width: 100%;
 }
@@ -124,11 +125,22 @@ img {
 .title {
   font-weight: var(--bold);
   font-size: var(--largeFont);
+  color: var(--secondaryColor);
+}
+.sub-title {
+  font-weight: var(--bold);
+  font-size: 1.5rem;
+  color: var(--primaryColor);
 }
 
 @media only screen and (max-width: 1200px) {
   .title {
     font-size: var(--meduimFont);
+  }
+  .sub-title {
+    font-weight: var(--bold);
+    font-size: 1rem;
+    color: var(--primaryColor);
   }
 }
 
@@ -140,13 +152,22 @@ img {
 }
 
 @media only screen and (max-width: 576px)  {
- 
+  .sub-title {
+    font-weight: var(--bold);
+    font-size: 0.8rem;
+    color: var(--primaryColor);
+  }
  
 }
 
 @media only screen and (max-width: 560px)  {
   .title {
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+  .sub-title {
+    font-weight: var(--bold);
+    font-size: 0.8rem;
+    color: var(--primaryColor);
   }
 }
 
@@ -268,6 +289,10 @@ header .bugger {
   align-items: center;
   justify-content: center;
   padding: 0 4rem;
+  font-size: var(--smallFont);
+}
+.showcase .text-content p {
+  display: block;
 }
 .showcase .showcase-img {
   width: 50%;
@@ -282,6 +307,32 @@ header .bugger {
   width: 100%;
   /* height: 40%; */
 }
+
+.showcase .text-content .icon-btn {
+  color: var(--primaryColor);
+  display: flex;
+  align-items: center;
+  border: solid 1px #fff;
+  padding: 6px;
+  font-weight: var(--normarl);
+  transition: var(--transition);
+}
+
+.showcase .text-content .icon-btn ion-icon {
+  margin-left: 0.4rem;
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.showcase .text-content .icon-btn:hover {
+  color: var(--secondaryColor);
+}
+
+.showcase .text-content .icon-btn:hover ion-icon {
+  margin-left: 1rem;
+  color: var(--primaryColor);
+}
+
 @media only screen and (max-width: 1200px) {
   .showcase {
     height: 100%;
@@ -299,6 +350,12 @@ header .bugger {
 @media only screen and (max-width: 576px)  {
   .showcase {
     padding-top: 1.8rem;
+  }
+
+  .showcase .text-content .icon-btn ion-icon {
+    margin-left: 0.4rem;
+    font-size: 1rem;
+    transition: var(--transition);
   }
  
   .showcase .text-content {
@@ -331,6 +388,7 @@ header .bugger {
   }
   .showcase .text-content p {
     font-size: 0.6rem;
+    display: none;
   }
   .showcase .text-content .icon-btn {
     font-size: 0.6rem;
