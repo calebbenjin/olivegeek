@@ -208,7 +208,7 @@ img {
 
 @media only screen and (max-width: 560px)  {
   .title {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   .sub-title {
     font-weight: var(--bold);
@@ -449,6 +449,9 @@ header .bugger {
     font-size: 0.6rem;
     display: none;
   }
+  .showcase .text-content .home {
+    display: block;
+  }
   .showcase .text-content .icon-btn {
     font-size: 0.6rem;
     color: var(--primaryColor);
@@ -530,7 +533,7 @@ header .bugger {
 
 @media only screen and (max-width: 1200px) {
   .welcome-section .card {
-    height: 400px;
+    height: 100%;
     margin: 2.5rem auto;
     width: 90%;
   }
@@ -539,6 +542,11 @@ header .bugger {
 @media only screen and (max-width: 576px) {
   .welcome-section .flow-top {
     margin-top: 1rem;
+  }
+  .welcome-section .card {
+    height: 320px;
+    margin: 2.5rem auto;
+    width: 90%;
   }
 }
 
@@ -553,6 +561,7 @@ header .bugger {
 .service-section .service-card {
   /* background: #ccc; */
   color: #fff;
+  padding: 10px;
   height: 350px;
   width: 80%;
   margin: 1.5rem auto;
@@ -603,7 +612,12 @@ header .bugger {
 
 @media only screen and (max-width: 1200px) {
   .service-section .service-card {
-    width: 90%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .service-section .service-card {
+    width: 100%;
   }
 }
 
@@ -682,6 +696,15 @@ header .bugger {
   .work-section .cases-card h5 {
     margin: 1rem 0;
     font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .work-section .cases-card .case-title {
+    font-size: 1.5rem;
+  }
+
+  .work-section .cases-card .case-img {
+    width: 100%;
   }
 }
 
