@@ -130,6 +130,7 @@ img {
   font-size: var(--largeFont);
   color: var(--secondaryColor);
   font-family: var(--ff-secondary);
+  margin-top: -0.3rem;
 }
 .sub-title {
   font-weight: var(--bold);
@@ -203,12 +204,19 @@ img {
     font-size: 0.8rem;
     color: var(--primaryColor);
   }
+
+  .section-title .sec-title {
+    font-weight: 600;
+    color: var(--secondaryColor);
+    font-size: 1rem;
+  }
  
 }
 
 @media only screen and (max-width: 560px)  {
   .title {
     font-size: 1.2rem;
+    margin: 0.12rem 0;
   }
   .sub-title {
     font-weight: var(--bold);
@@ -401,7 +409,7 @@ header .bugger {
 @media only screen and (max-width: 769px)  {
   
   .showcase .text-content {
-    padding: 0 2rem;
+    padding: 0 rem;
   }
 }
 
@@ -418,11 +426,11 @@ header .bugger {
   }
  
   .showcase .text-content {
-    width: 50%;
+    width: 60%;
     padding: 0 1.5rem;
   }
   .showcase .showcase-img {
-    width: 50%;
+    width: 40%;
   }
   .showcase .text-content p {
     font-size: 0.7rem;
@@ -439,11 +447,11 @@ header .bugger {
   }
  
   .showcase .text-content {
-    width: 50%;
+    width: 60%;
     padding: 0 1rem;
   }
   .showcase .showcase-img {
-    width: 50%;
+    width: 40%;
   }
   .showcase .text-content p {
     font-size: 0.6rem;
@@ -547,6 +555,27 @@ header .bugger {
     height: 320px;
     margin: 2.5rem auto;
     width: 90%;
+  }
+
+  .welcome-section .card .card-img .dash {
+    width: 100px;
+    height: 105px;
+    border-radius: 50%;
+    position: relative;
+    top: -1.5rem;
+    left: -1rem;
+    border: dashed 2px #333;
+    background: var(--whiteColor);
+    transition: var(--transition);
+  }
+  .welcome-section .card .card-img .user {
+    width: 105px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -0.3rem;
+    right: -0.3rem;
+    border: solid 10px #fff;
   }
 }
 
@@ -797,6 +826,9 @@ header .bugger {
   margin-bottom: 1.5rem;
 }
 
+
+
+
 /* Clients Section End
 ======================================*/
 
@@ -938,6 +970,114 @@ form .input-group-text {
 }
 
 /* Contact Section End
+======================================*/
+
+/* Development Section
+======================================*/
+
+.dev-section {
+  height: 100%;
+  padding: 6rem 0;
+}
+
+.dev-section .stack-dev{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: var(--whiteColor);
+  flex-direction: row;
+}
+
+.stack-dev .dev-card  {
+  padding: 3rem;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 350px;
+}
+
+.stack-dev .dev-card h2 {
+  font-family: var(--ff-secondary);
+  text-transform: capitalize;
+  margin: 0.67rem 0;
+}
+
+
+@media only screen and (max-width: 769px)  {
+
+  .dev-section {
+    height: 100%;
+    padding: 2rem 0;
+  }
+  .dev-section .stack-dev{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--whiteColor);
+  }
+  
+  .stack-dev .dev-card  {
+    width: 100%;
+    margin: 2rem auto;
+    border-radius: var(--radius);
+  }
+  .stack-dev .dev-card h2 {
+    font-size: 1.5rem;
+  }
+  
+}
+
+
+.stack-dev .front-end {
+  background: var(--asentColor);
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+
+.stack-dev .back-end {
+  background: var(--primaryColor);
+  box-shadow: var(--dark-shadow);
+  z-index: 6;
+  height: 340px;
+  border-radius: var(--radius);
+}
+
+.stack-dev .product-dev {
+  background: var(--primaryColor2);
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+.tech-card {
+  /* background: #ccc; */
+  padding: 3rem;
+  box-shadow: var(--light-shadow);
+  height: 150px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.tech-card h4 {
+  font-weight: 900;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.tech-card:hover {
+  box-shadow: none;
+}
+
+/* Development Section End
 ======================================*/
   
 
