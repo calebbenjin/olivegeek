@@ -165,7 +165,6 @@ img {
 @media only screen and (max-width: 1200px) {
   .title {
     font-size: var(--meduimFont);
-    color: #fff;
   }
   .sub-title {
     font-weight: var(--bold);
@@ -289,7 +288,7 @@ header {
   width: 100%;
   z-index: 99;
   transition: var(--transition);
-  /* background: var(--secondaryColor); */
+  background: var(--secondaryColor);
 }
 header:hover {
   background: var(--whiteColor);
@@ -329,10 +328,10 @@ header .bugger {
   display: none;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
   header {
     padding: 2px 0;
-    /* background: transparent; */
+    background: transparent;
   }
   header .bugger {
     width: 30px;
@@ -373,7 +372,7 @@ header .bugger {
   justify-content: center;
   padding: 0 4rem;
   font-size: var(--smallFont);
-  color: #fff;
+  /* color: #fff; */
 }
 
 .showcase .showcase-img {
@@ -417,22 +416,56 @@ header .bugger {
 
 @media only screen and (max-width: 1200px) {
   .showcase {
-    height: 90vh;
+    height: 100%;
+  }
+
+  .showcase .text-content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+    font-size: var(--smallFont);
+  }
+}
+
+@media only screen and (max-width: 768px)  {
+  .showcase-home {
+    height: 80vh;
     background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/home.png);
     background-position: top;
     background-size: cover;
+    color: #fff;
+  }
+  .showcase-service {
+    height: 80vh;
+    background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/service.png);
+    background-position: top;
+    background-size: cover;
+    color: #fff;
+  }
+  .showcase-about {
+    height: 80vh;
+    background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/about.png);
+    background-position: top;
+    background-size: cover;
+    color: #fff;
+  }
+  .showcase-contact {
+    height: 80vh;
+    background-image: linear-gradient(to right, #101922d3, #101922de, #101922a1), url(/img/contact.png);
+    background-position: top;
+    background-size: cover;
+    color: #fff;
+  }
+
+  .showcase .title {
+    color: #fff;
   }
 
   .showcase .text-content {
     padding: 0 rem;
     width: 100%;
-  }
-}
-
-@media only screen and (max-width: 769px)  {
- 
-  .showcase .text-content {
-    padding: 0 rem;
   }
 
   .showcase .showcase-img {
