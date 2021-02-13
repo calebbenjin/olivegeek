@@ -189,7 +189,7 @@ img {
   .sec-title {
     font-weight: 600;
     color: var(--secondaryColor);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .section-title h4 {
@@ -198,7 +198,7 @@ img {
   }
 
   .section-title {
-    width: 90%;
+    width: 95%;
     margin: 2rem auto;
   }
 }
@@ -212,12 +212,6 @@ img {
     font-size: 1rem;
     color: var(--primaryColor);
   }
-
-  .sec-title {
-    font-weight: 600;
-    color: var(--secondaryColor);
-    font-size: 1.3rem;
-  }
  
 }
 
@@ -229,11 +223,6 @@ img {
     color: var(--primaryColor);
   }
 
-  .sec-title {
-    font-weight: 600;
-    color: var(--secondaryColor);
-    font-size: 1.2rem;
-  }
 
   .section-title h5 {
     font-size: 0.9rem;
@@ -479,7 +468,6 @@ header .bugger {
     padding-top: 1.8rem;
   }
 
- 
   .showcase .text-content {
     /* width: 60%; */
     padding: 0 1.5rem;
@@ -1275,7 +1263,7 @@ form .input-group-text {
 
 .team-section .team-card {
   width: 80%;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 10px;
   box-shadow: var(--dark-shadow);
   border-top-left-radius: 2rem;
@@ -1298,12 +1286,12 @@ form .input-group-text {
 }
 
 .team-one {
-  margin-top: 4rem !important;
+  margin-top: 2rem !important;
 }
 
 @media only screen and (max-width: 768px)  {
   .team-one {
-    margin-top: 2rem !important;
+    margin-top: 1rem !important;
   }
 
   .team-section .team-card {
