@@ -491,6 +491,18 @@ header .bugger {
   .showcase .showcase-img {
     display: none;
   }
+
+  .icon-btn {
+    color: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 6px;
+    font-size: 1rem;
+    font-weight: var(--normarl);
+    transition: var(--transition);
+    font-weight: 900;
+  }
 }
 
 
@@ -527,7 +539,7 @@ header .bugger {
   position: relative;
   margin: 1rem auto;
   height: 350px;
-  box-shadow: var(--light-shadow);
+  /* box-shadow: var(--light-shadow); */
   transition: var(--transition);
   border-top: dashed 2px var(--secondaryColor);
   border-left: dashed 2px var(--secondaryColor);
@@ -869,7 +881,7 @@ header .bugger {
 
 .clients-section .client-card {
   border: solid 1px #ececec;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: var(--radius);
   position: relative;
   margin: 2rem auto;
@@ -915,7 +927,7 @@ header .bugger {
 }
 
 .clients-section .client-two .user-title {
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .clients-section .client-three .client-img {
@@ -936,15 +948,16 @@ header .bugger {
 }
 
 .clients-section .client-card h5 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
+  margin-bottom: 1.5rem;
   text-transform: capitalize;
 }
 
 .clients-section .client-card .user-name {
   color: var(--primaryColor);
   font-family: var(--ff-secondary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -1071,7 +1084,7 @@ header .bugger {
   }
   .contact-row .contact-col {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
   }
 }
@@ -1579,6 +1592,8 @@ form .input-group-text {
 footer {
   padding-top: 20px;
   padding-bottom: 10px;
+  background: var(--secondaryColor);
+  color: #fff;
 }
 
 footer p {
@@ -1588,7 +1603,7 @@ footer p {
 footer i {
   font-size: 1.5rem;
   margin: 0 1rem;
-  color: var(--secondaryColor);
+  color: var(--primaryColor);
   transition: var(--transition);
 }
 footer i:hover {
