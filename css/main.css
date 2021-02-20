@@ -808,7 +808,6 @@ header .bugger {
   background: #f1f1f1;
   padding: 20px;
   border-radius: var(--radius);
-  /* box-shadow: var(--light-shadow); */
   width: 35%;
   transition: var(--transition);
 }
@@ -853,8 +852,9 @@ header .bugger {
     font-size: 1.5rem;
   }
 
-  .work-section .cases-card .case-img {
+  .work-section .cases-card .case-img img{
     width: 100%;
+    height: 130px;
   }
 }
 
