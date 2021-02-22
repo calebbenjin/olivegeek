@@ -306,7 +306,7 @@ header {
   width: 100%;
   z-index: 99;
   transition: var(--transition);
-  background: rgba(255, 255, 255, 0.65);
+  background: transparent;
 }
 header:hover {
   background: var(--whiteColor);
