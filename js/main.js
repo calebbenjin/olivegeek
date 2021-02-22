@@ -8,3 +8,9 @@ openBtn.addEventListener('click', function() {
 closedBtn.addEventListener('click', function() {
   sideNav.classList.remove('openOut')
 })
+
+document.querySelector('header').addEventListener('scroll', function() {
+  if(window.pageXOffset > 500) {
+    
+  }
+})

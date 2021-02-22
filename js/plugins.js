@@ -26,3 +26,13 @@
 $(document).ready(function() {
   $('select').niceSelect();
 });
+
+jQuery(window).scroll(function() {    
+  var scroll = jQuery(window).scrollTop();
+
+  if (scroll >= 150) {
+      jQuery("header").addClass("black");
+  } else {
+      jQuery("header").removeClass("black");
+  }
+}); 

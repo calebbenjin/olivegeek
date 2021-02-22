@@ -342,6 +342,10 @@ header ul li a {
   font-size: 1rem
 }
 
+.black {
+    background: var(--secondaryColor);
+  }
+
 header .bugger {
   display: none;
 }
@@ -353,7 +357,8 @@ nav #close-btn {
 @media only screen and (max-width: 768px) {
   header {
     padding: 3px 0;
-    background: var(--secondaryColor);
+    /* background: var(--secondaryColor); */
+    background: transparent;
   }
   header .bugger {
     display: block;
@@ -375,6 +380,8 @@ nav #close-btn {
     transition: var(--transition);
     transform: translateX(-100%);
   }
+
+  
 
   header ul li {
     display: block;
