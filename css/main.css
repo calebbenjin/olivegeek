@@ -27,6 +27,10 @@
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 select {
   display: none;
@@ -302,7 +306,7 @@ header {
   width: 100%;
   z-index: 99;
   transition: var(--transition);
-  background: var(--secondaryColor);
+  background: rgba(255, 255, 255, 0.65);
 }
 header:hover {
   background: var(--whiteColor);
@@ -332,9 +336,9 @@ header ul {
 }
 
 header ul li a {
-  color: var(--whiteColor);
+  color: var(--primaryColor);
   text-decoration: none;
-  /* font-weight: var(--bold); */
+  font-weight: var(--bold);
   font-size: 1rem
 }
 
@@ -342,19 +346,56 @@ header .bugger {
   display: none;
 }
 
+nav #close-btn {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   header {
-    padding: 2px 0;
-    background: transparent;
+    padding: 3px 0;
+    background: var(--secondaryColor);
   }
   header .bugger {
-    width: 30px;
-    height: 15px;
-    background: #fff;
     display: block;
   }
+  header .bugger ion-icon {
+    color: var(--primaryColor);
+    display: block;
+    font-size: 2rem;
+  }
   nav {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 3rem;
+    height: 100%;
+    z-index: 4;
+    transition: var(--transition);
+    transform: translateX(-100%);
+  }
+
+  header ul li {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  header ul li a {
+    color: var(--secondaryColor);
+  }
+
+  nav #close-btn {
+    color: var(--primaryColor) !important;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: block;
+  }
+
+  .openOut {
+    transform: translateX(0%);
   }
 
   header .logo {
