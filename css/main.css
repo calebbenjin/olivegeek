@@ -328,9 +328,6 @@ header {
   transition: var(--transition);
   background: transparent;
 }
-header:hover {
-  /* background: var(--whiteColor); */
-}
 header:hover a {
   color: var(--primaryColor);
 }

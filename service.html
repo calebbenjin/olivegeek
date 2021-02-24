@@ -27,6 +27,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
   <!-- Bootstrap -->
@@ -70,7 +71,10 @@
       <div class="text-content">
         <div>
           <h4 class="sub-title">Our Services</h4>
-          <h1 class="title">Give Impetus To Your Business With Tailored Web Solutions</h1>
+          <h1 class="title" data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in">Give Impetus To Your Business With Tailored Web Solutions</h1>
           <p>We help the best companies in the world create products and inovate better and faster.</p>
           <a href="" class="icon-btn">Let's work together <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
         </div>
@@ -509,6 +513,15 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 100,
+      duration: 400,
+      easing: 'ease'
+    });
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

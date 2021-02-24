@@ -15,6 +15,7 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CZ8H8MFJF"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -70,7 +71,10 @@
       <div class="text-content">
         <div>
           <h4 class="sub-title">About us</h4>
-          <h1 class="title">We Were Building Software Remotely Before It Was A Mainstream</h1>
+          <h1 class="title" data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in">We Were Building Software Remotely Before It Was A Mainstream</h1>
           <p>To help businesses and startups build the right products in a cost-efficient way and scale their engineering teams with our relevant expertise.</p>
           <a href="" class="icon-btn">Let's work together <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
         </div>
@@ -406,6 +410,14 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 100,
+      duration: 400,
+      easing: 'ease'
+    });
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

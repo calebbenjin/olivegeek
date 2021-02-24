@@ -36,6 +36,7 @@
 
   <!-- Fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/normalize.css">
@@ -76,7 +77,10 @@
     <section class="showcase showcase-home" id="scroll-top">
         <div class="text-content">
           <div>
-            <h1 class="title">Build Better Product Faster</h1>
+            <h1 class="title" data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in">Build Better Product Faster</h1>
             <p class="home">We help the best companies in the world create products and inovate better and faster.</p>
             <a href="" class="icon-btn">Let's work together <ion-icon name="arrow-forward-circle-outline"></ion-icon></a>
           </div>
@@ -149,7 +153,7 @@
         <div class="row">
           <div class="col-md-4 col-6 mx-auto">
             <a href="#">
-              <div class="service-card web-img">
+              <div class="service-card web-img" >
                 <div class="service-circle"></div>
                 <div class="service-line"></div>
                 <h4><span>W</span>eb Development</h4>
@@ -710,6 +714,15 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 100,
+      duration: 400,
+      easing: 'ease'
+    });
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
