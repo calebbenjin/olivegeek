@@ -897,8 +897,6 @@ nav .hover-dropdown {
   border-radius: var(--radius);
   border: solid 1px #ccc;
   display: flex;
-  align-items: center;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
@@ -914,21 +912,17 @@ nav .hover-dropdown {
 
 .work-section .cases-card .content {
   padding: 2rem;
+  width: 50%
 }
 
 .work-section .cases-card .case-img {
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
   padding: 20px;
   border-radius: var(--radius);
-  width: 35%;
+  width: 50%;
   transition: var(--transition);
 }
 
-
-
-.work-section .cases-card:hover .case-img {
-  background: var(--secondaryColor);
-}
 
 .work-section .cases-card .case-title {
   font-family: var(--ff-secondary);
@@ -949,6 +943,7 @@ nav .hover-dropdown {
 @media only screen and (max-width: 768px) {
   .work-section .cases-card .content {
     padding: 1rem;
+    width: 100%;
   }
   .work-section .cases-card {
     padding: 1rem;
