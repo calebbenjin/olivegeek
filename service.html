@@ -370,7 +370,7 @@
               <div class="row">
                 <div class="col-md-6 col-lg-4 mx-auto">
                   <div class="exper">
-                    <h1>7</h1>
+                    <h1>4</h1>
                     <h5>Years of remote development</h5>
                   </div>
                 </div>
@@ -390,7 +390,7 @@
             </div>
           </div>
           <div class="form-container contact-col">
-            <form>
+            <form name="contact" netlify>
               <div class="row">
                 <div class="col-md-6 mx-auto">
                   <label for="inlineFormInputGroup">Name</label>
@@ -398,7 +398,7 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-user"></i></div>
                     </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Full Name">
+                    <input type="text" required name="name" class="form-control" id="inlineFormInputGroup" placeholder="Full Name">
                   </div>
                 </div>
                 <div class="col-md-6 mx-auto">
@@ -407,7 +407,7 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-envelope"></i></div>
                     </div>
-                    <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Email">
+                    <input type="email" required name="email" class="form-control" id="inlineFormInputGroup" placeholder="Email">
                   </div>
                 </div>
                 <div class="col mx-auto">
@@ -416,7 +416,7 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-map-pin"></i></div>
                     </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Company Name">
+                    <input type="text" required name="company name" class="form-control" id="inlineFormInputGroup" placeholder="Company Name">
                   </div>
                 </div>
                 
@@ -428,7 +428,7 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-phone-alt"></i></div>
                     </div>
-                    <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="text">
+                    <input type="text" required name="phone number" class="form-control" id="inlineFormInputGroup" placeholder="Phone Number">
                   </div>
                 </div>
                 <div class="col-md-6 mx-auto">
@@ -437,13 +437,13 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-map-signs"></i></div>
                     </div>
-                    <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Contry">
+                    <input type="text" required name="country" class="form-control" id="inlineFormInputGroup" placeholder="Contry">
                   </div>
                 </div>
                 <div class="col mx-auto">
                   <label for="inlineFormInputGroup"><i class="fas fa-pen"></i> Message </label>
                   <div class="input-group">
-                    <textarea name="" id="" rows="6" placeholder="Message"></textarea>
+                    <textarea name="note" required id="" rows="6" placeholder="Message"></textarea>
                   </div>
                 </div>
                 
@@ -455,13 +455,13 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-microphone"></i></div>
                     </div>
-                    <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Instagram, Facebook, Linkined....">
+                    <input type="text" required class="form-control" id="inlineFormInputGroup" placeholder="Instagram, Facebook, Linkined....">
                   </div>
                 </div>
               </div>
 
               <div class="">
-                <button class="core-btn-main">Submit Request</button>
+                <button class="core-btn-main" type="submit">Submit Request</button>
               </div>
             </form>
           </div>
@@ -474,7 +474,7 @@
         <span>TOP</span>
       </div>
     </a>
-    
+
   </main>
   <footer>
     <div class="container">

@@ -115,55 +115,56 @@
       </div>
     </section>
 
-    <section class="contact-section">
+    <section class="contact-section ">
       <div class="contact-form">
         <div class="section-title">
           <h4>Let’s work together</h4>
           <h2 class="sec-title">Get Our Special Offer For Your Company Needs</h5>
         </div>
         <div class="contact-row">
-          <div class="contact-bg contact-col">
-            <div class="contact-text">
-              <h3 class="sec-title">What will be next step?</h3>
-              <p class="sec-text">You are one step closer to build your perfect product.</p>
-              <div class="steps-flow">
-                <div class="flow-1 step-card">
-                  <img src="img/pin.png" alt="" class="pin">
-                  <h5>We’ll prepare a proposal</h5>
-                  <p>Required scope, timeline and apr, price will be included if you provide us with detailed information about a project.</p>
+          <div class="contact-bg contact-bgg contact-col">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-lg-4 mx-auto">
+                  <div class="exper">
+                    <h1>4</h1>
+                    <h5>Years of remote development</h5>
+                  </div>
                 </div>
-                <div class="flow-2 step-card">
-                  <img src="img/pin.png" alt="" class="pin">
-                  <h5>Together we discuss it</h5>
-                  <p>Let’s get acquainted and discuss all the possible variants and options. Google Hangouts or Skype usually works great.</p>
+                <div class="col-md-6 col-lg-4 mx-auto">
+                  <div class="exper">
+                    <h1>200</h1>
+                    <h5>clients</h5>
+                  </div>
                 </div>
-                <div class="flow-3 step-card">
-                  <img src="img/pin.png" alt="" class="pin-1">
-                  <h5>Let’s start building</h5>
-                  <p>When the contact is signed, and all goals are set we can start the first sprint.</p>
+                <div class="col-md-6 col-lg-4 mx-auto">
+                  <div class="exper">
+                    <h1>89%</h1>
+                    <h5>Senior and middle engineers</h5>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="form-container contact-col">
-            <form>
+            <form name="contact" netlify>
               <div class="row">
-                <div class="col-md-12 col-lg-6 mx-auto">
+                <div class="col-md-6 mx-auto">
                   <label for="inlineFormInputGroup">Name</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-user"></i></div>
                     </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Full Name">
+                    <input type="text" required name="name" class="form-control" id="inlineFormInputGroup" placeholder="Full Name">
                   </div>
                 </div>
-                <div class="col-md-12 col-lg-6 mx-auto">
+                <div class="col-md-6 mx-auto">
                   <label for="inlineFormInputGroup">Email</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-envelope"></i></div>
                     </div>
-                    <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Email">
+                    <input type="email" required name="email" class="form-control" id="inlineFormInputGroup" placeholder="Email">
                   </div>
                 </div>
                 <div class="col mx-auto">
@@ -172,34 +173,34 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-map-pin"></i></div>
                     </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Company Name">
+                    <input type="text" required name="company name" class="form-control" id="inlineFormInputGroup" placeholder="Company Name">
                   </div>
                 </div>
                 
               </div>
               <div class="row">
-                <div class="col-md-12 col-lg-6 mx-auto">
+                <div class="col-md-6 mx-auto">
                   <label for="inlineFormInputGroup">Phone</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-phone-alt"></i></div>
                     </div>
-                    <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Phone">
+                    <input type="text" required name="phone number" class="form-control" id="inlineFormInputGroup" placeholder="Phone Number">
                   </div>
                 </div>
-                <div class="col-md-12 col-lg-6 mx-auto">
+                <div class="col-md-6 mx-auto">
                   <label>Country</label>
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-map-signs"></i></div>
                     </div>
-                    <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Contry">
+                    <input type="text" required name="country" class="form-control" id="inlineFormInputGroup" placeholder="Contry">
                   </div>
                 </div>
                 <div class="col mx-auto">
                   <label for="inlineFormInputGroup"><i class="fas fa-pen"></i> Message </label>
                   <div class="input-group">
-                    <textarea name="" id="" rows="6" placeholder="Message"></textarea>
+                    <textarea name="note" required id="" rows="6" placeholder="Message"></textarea>
                   </div>
                 </div>
                 
@@ -211,13 +212,13 @@
                     <div class="input-group-prepend">
                       <div class="input-group-text"><i class="fas fa-microphone"></i></div>
                     </div>
-                    <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Instagram, Facebook, Linkined....">
+                    <input type="text" required class="form-control" id="inlineFormInputGroup" placeholder="Instagram, Facebook, Linkined....">
                   </div>
                 </div>
               </div>
 
               <div class="">
-                <button class="core-btn-main">Submit Request</button>
+                <button class="core-btn-main" type="submit">Submit Request</button>
               </div>
             </form>
           </div>
