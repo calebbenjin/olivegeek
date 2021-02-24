@@ -1591,7 +1591,6 @@ form .input-group-text {
   }
 
   .mission-section .mission-row {
-    background: var(--secondaryColor);
     color: var(--whiteColor);
     width: 100%;
     display: flex;
@@ -1613,7 +1612,7 @@ form .input-group-text {
 
   .mission-content .titl {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .mission-section .small-bg {
@@ -1635,13 +1634,13 @@ form .input-group-text {
     color: #fff;
     /* font-size: 1.7rem; */
   }
+
+  .mission-section .mission-content {
+    width: 100%;
+    padding: 2rem 0;
+  }
 }
 
-@media only screen and (max-width: 560px) {
- 
-
-  
-}
 
 
 .vision-section .vision-row {
