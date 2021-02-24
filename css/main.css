@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@600;800&display=swap');
 
 * {
   margin: 0;
@@ -28,6 +28,7 @@
 }
 
 html {
+  min-width: 360px;
   scroll-behavior: smooth;
 }
 
@@ -36,14 +37,33 @@ select {
   display: none;
 }
 
-html, body {
+body {
   color: #222;
   font-size: 1rem;
   line-height: 1.4;
   height: 100vh;
-  background: var(--whiteColor);
+  background:#fdfdfd;
   font-family: var(--ff-primary);
 }
+
+.smooth-top {
+  position: fixed;
+  bottom: 2rem; 
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background: var(--primaryColor);
+  border-radius: 50%;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: var(--ff-secondary);
+}
+
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -309,7 +329,7 @@ header {
   background: transparent;
 }
 header:hover {
-  background: var(--whiteColor);
+  /* background: var(--whiteColor); */
 }
 header:hover a {
   color: var(--primaryColor);
@@ -352,6 +372,38 @@ header .bugger {
 
 nav #close-btn {
   display: none;
+}
+
+nav .hover-dropdown {
+  position: relative;
+}
+
+.dropdown-card {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  /* margin-top: 1rem; */
+  left: 0;
+  background: var(--secondaryColor);
+  padding: 20px;
+  white-space: nowrap;
+  display: none;
+}
+
+.hover-dropdown .dropdown-card a {
+  display: block;
+  margin: 1rem 0;
+}
+
+.hover-dropdown:hover > .dropdown-card, .dropdown-card:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.hover-dropdown .dropdown-card a {
+  font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1657,6 +1709,117 @@ footer i {
 footer i:hover {
   color: var(--primaryColor);
 }
+
+
+.model {
+  background: #ccc;
+  padding: 4rem;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.model-text {
+  width: 40%;
+  font-weight: 900;
+}
+.model-text h5{
+  font-weight: 900;
+}
+
+.model-text h3{
+  font-family: var(--ff-secondary);
+}
+
+.model-2 .model-text, .model-3 .model-text {
+  color: #fff;
+}
+
+
+.model-1 {
+  background-image: url(/img/product-1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.model-2 {
+  background-image: url(/img/pro-3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.model-3 {
+  background-image: url(/img/pro-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.model-text-mobile {
+  display: none;
+}
+
+@media(max-width: 768px) {
+
+  .model-text-mobile {
+    display: block;
+  }
+
+  .model-text {
+    display: none;
+  }
+
+  .model {
+    padding: 2rem;
+    height: 200px;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .model-text {
+    width: 100%;
+    font-weight: 900;
+  }
+
+  .model-1 {
+    background-image: url(/img/mobile-1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .model-2 {
+    background-image: url(/img/mobile-2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .model-3 {
+    background-image: url(/img/mobile-3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.agile-section hr {
+  margin: 2rem 0;
+}
+
+.agile-section img {
+  margin-top: 4rem;
+}
+
+.estimate-title {
+  font-family: var(--ff-secondary);
+  color:#33bcdf;
+}
+
+.estimate-text p {
+  font-size: 1rem;
+}
+.estimate-text ul li, .planing-text ul li, .design-text ul li, .coding-text ul li{
+  list-style-type: square;
+  line-height: 2;
+}
+
 
 /* ==========================================================================
    Helper classes

@@ -30,7 +30,7 @@ $(document).ready(function() {
 jQuery(window).scroll(function() {    
   var scroll = jQuery(window).scrollTop();
 
-  if (scroll >= 150) {
+  if (scroll >= 50) {
       jQuery("header").addClass("black");
   } else {
       jQuery("header").removeClass("black");
