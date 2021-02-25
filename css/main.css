@@ -80,6 +80,26 @@ body {
   color: #128C7E;
 }
 
+@media(max-width:  768px) {
+  .smooth-top {
+    position: fixed;
+    bottom: 3.5rem; 
+    right: 0.6rem;
+  }
+  .whatsapp {
+    position: fixed;
+    bottom: 3.5rem; 
+    right: 3.5rem;
+  }
+  .smooth-top i {
+    font-size: 2rem;
+  }
+  .whatsapp i {
+    font-size: 2rem;
+    color: #128C7E;
+  }
+}
+
 
 ::-moz-selection {
   background: #b3d4fc;
