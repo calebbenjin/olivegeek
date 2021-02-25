@@ -716,8 +716,6 @@ nav .hover-dropdown {
 .welcome-section .card:hover {
   /* border: none; */
   box-shadow: var(--dark-shadow);
-  border-top: dashed 2px var(--primaryColor);
-  border-left: dashed 2px var(--primaryColor);
 }
 
 .welcome-section .card:hover.flow-top {
@@ -1087,7 +1085,8 @@ nav .hover-dropdown {
 .clients-section .client-card .user-name {
   color: var(--primaryColor);
   font-family: var(--ff-secondary);
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
+  font-size: 1rem;
 }
 
 
