@@ -50,9 +50,6 @@ body {
   position: fixed;
   bottom: 2rem; 
   right: 2rem;
-  width: 50px;
-  height: 50px;
-  background: var(--primaryColor);
   border-radius: 50%;
   z-index: 9;
   display: flex;
@@ -60,8 +57,27 @@ body {
   align-items: center;
   cursor: pointer;
   color: #fff;
-  font-size: 0.8rem;
   font-family: var(--ff-secondary);
+}
+.whatsapp {
+  position: fixed;
+  bottom: 2rem; 
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: var(--ff-secondary);
+}
+
+.smooth-top i {
+  font-size: 3rem;
+}
+.whatsapp i {
+  font-size: 3rem;
+  color: #128C7E;
 }
 
 
@@ -638,8 +654,8 @@ nav .hover-dropdown {
   height: 350px;
   /* box-shadow: var(--light-shadow); */
   transition: var(--transition);
-  border-top: dashed 2px var(--secondaryColor);
-  border-left: dashed 2px var(--secondaryColor);
+  /* border-top: dashed 2px var(--secondaryColor);
+  border-left: dashed 2px var(--secondaryColor); */
   width: 80%;
 }
 .welcome-section .flow-top {
@@ -741,7 +757,7 @@ nav .hover-dropdown {
 ======================================*/
 
 .service-section .service-card {
-  color: var(--secondaryColor);
+  color: #fff;
   padding: 10px;
   height: 180px;
   width: 100%;
@@ -753,7 +769,7 @@ nav .hover-dropdown {
   font-family: var(--ff-secondary);
   text-transform: capitalize;
   text-align: center;
-  background: #fff;
+  /* background: #fff; */
   box-shadow: var(--dark-shadow);
   position: relative;
   overflow: hidden;
@@ -791,28 +807,28 @@ nav .hover-dropdown {
   color: var(--primaryColor);
 }
 
-/* .service-section .web-img {
-  background-image: linear-gradient(to right, #101922, #101922de, #10192267), url(/img/gen.png);
+.service-section .web-img {
+  background-image: linear-gradient(to right, #101922d3, #10192267), url(/img/webdev.png);
   background-position: center;
   background-size: cover;
 }
 .service-section .mobile-img {
-  background-image: linear-gradient(to right, #101922, #101922de, #10192267), url(/img/mobiledev.png);
+  background-image: linear-gradient(to right, #101922d3, #10192267), url(/img/mobiledev.png);
   background-position: center;
   background-size: cover;
 }
 .service-section .product-img {
-  background-image: linear-gradient(to right, #101922, #101922de, #10192267), url(/img/gen2.jpg);
+  background-image: linear-gradient(to right, #101922d3, #10192267), url(/img/gen2.jpg);
   background-position: center;
   background-size: cover;
 }
 .service-section .graphic-img {
-  background-image: linear-gradient(to right, #101922, #101922de, #10192267), url(/img/graphics.png);
+  background-image: linear-gradient(to right, #101922d3, #10192267), url(/img/graphics.png);
   background-position: center;
   background-size: cover;
 }
 .service-section .uiux-img {
-  background-image: linear-gradient(to right, #101922, #101922de, #10192267), url(/img/uiux.png);
+  background-image: linear-gradient(to right, #101922d3, #10192267), url(/img/uiux.png);
   background-position: center;
   background-size: cover;
 }
@@ -820,7 +836,7 @@ nav .hover-dropdown {
   background-image: linear-gradient(to right, #101922, #101922de, #10192267), url(/img/contentcreation.png);
   background-position: center;
   background-size: cover;
-} */
+}
 
 .service-btn {
   text-align: center;
@@ -853,6 +869,7 @@ nav .hover-dropdown {
     right: -7em;
     z-index: 0;
     border-radius: 50%;
+    display: none;
   }
 
   .service-line {
@@ -890,7 +907,7 @@ nav .hover-dropdown {
 ======================================*/
 
 .work-section .cases-card {
-  width: 90%;
+  width: 100%;
   border-radius: var(--radius);
   border: solid 1px #ccc;
   display: flex;
@@ -913,7 +930,7 @@ nav .hover-dropdown {
 }
 
 .work-section .cases-card .case-img {
-  /* background: #f1f1f1; */
+  background: #f1f1f1;
   padding: 20px;
   border-radius: var(--radius);
   width: 50%;
@@ -1332,7 +1349,7 @@ form .input-group-text {
 }
 
 .tech-card {
-  /* background: #ccc; */
+  background: #f6f6f6;
   padding: 3rem;
   height: 150px;
   border-radius: var(--radius);
@@ -1454,7 +1471,7 @@ form .input-group-text {
   width: 80%;
   margin: 1rem auto;
   padding: 10px;
-  box-shadow: var(--dark-shadow);
+  /* box-shadow: var(--dark-shadow); */
 }
 
 .team-card .team-details .name{
@@ -1685,14 +1702,16 @@ footer {
   padding-bottom: 10px;
   background: var(--secondaryColor);
   color: #fff;
+  text-align: center;
 }
 
 footer p {
-  font-weight: 900;
+  font-size: 0.9rem;
 }
 
+
 footer i {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin: 0 1rem;
   color: var(--primaryColor);
   transition: var(--transition);
@@ -1800,7 +1819,7 @@ footer i:hover {
 
 .estimate-title {
   font-family: var(--ff-secondary);
-  color:#33bcdf;
+  color: var(--primaryColor);
 }
 
 .estimate-text p {
