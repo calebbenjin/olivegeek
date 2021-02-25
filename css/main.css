@@ -193,11 +193,12 @@ img {
 
 .btn__primary .join-icon {
   color: #fff !important;
+  margin-left: 3rem;
 }
 
 .btn__primary {
   background: var(--primaryColor);
-  padding: 6px 40px;
+  padding: 6px 20px;
   border-radius: var(--radius);
   color: #fff;
   transition: var(--transition);
@@ -1461,6 +1462,10 @@ form .input-group-text {
     padding: 0rem;
     height: 90%;
     margin-top: 1rem;
+  }
+
+  .hire-abat {
+    padding: 2rem;
   }
   
 }
